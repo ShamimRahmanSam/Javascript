@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Celsius to fahrenheit</title>
+    <link rel="stylesheet" href="/css/ctf.css" />
+  </head>
+
+  <body>
+    <h1>JavaScript Functions</h1>
+    <p><br /><br /><br />Using a function as a variable:</p>
+
+    <p id="demo"></p>
+
+    <script>
+      let text =
+        "</br> <br> <br></br> <br> <br>The temperature is " +
+        toCelsius(77) +
+        " Celsius.";
+      document.getElementById("demo").innerHTML = text;
+
+      function toCelsius(fahrenheit) {
+        return (5 / 9) * (fahrenheit - 32);
+      }
+    </script>
+  </body>
+</html>

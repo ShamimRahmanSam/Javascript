@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <style>
+      body {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 0 500px;
+      }
+    </style>
+
+    <script src="/js/srs.js"></script>
+
+    <script src="/js/sort.js"></script>
+
+    <script>
+      function s() {
+        document.getElementById("demo6").innerHTML = "Paragraph changed.";
+      }
+    </script>
+  </head>
+  <body>
+    <h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can show hidden HTML elements.</p>
+
+    <p id="demo1" style="display: none">Hello JavaScript!</p>
+
+    <button
+      type="button"
+      onclick="document.getElementById('demo1').style.display='block'"
+    >
+      Click This!
+    </button>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <button
+      type="button"
+      onclick="document.getElementById('demo2').innerHTML = Date()"
+    >
+      Click me to display Date and Time.
+    </button>
+
+    <p id="demo2"></p>
+
+    <p id="demo3">JavaScript can change the style of an HTML element.</p>
+
+    <button
+      type="button"
+      onclick="document.getElementById('demo3').style.fontSize='35px'"
+    >
+      Click Me!
+    </button>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <p>
+      In this case JavaScript changes the value of the src (source) attribute of
+      an image.
+    </p>
+
+    <button onclick="document.getElementById('myImage').src='assets/on.png'">
+      Turn on the light
+    </button>
+
+    <img id="myImage" src="assets/off.png" style="width: 300px" />
+
+    <button onclick="document.getElementById('myImage').src='assets/off.png'">
+      Turn off the light
+    </button>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h2>JavaScript in Body</h2>
+    <p>
+      Scripts can be placed in the body, or in the head section of an HTML page,
+      or in both. In this example, a JavaScript function is placed in the head
+      section of an HTML page. The function is invoked (called) when a button is
+      clicked:
+    </p>
+
+    <p id="demo5"></p>
+
+    <script>
+      document.getElementById("demo5").innerHTML = "My First JavaScript";
+    </script>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h2>Demo JavaScript in Head</h2>
+
+    <p id="demo6">A Paragraph</p>
+    <button type="button" onclick="s()">Try it</button>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <p>
+      In this example, a JavaScript function is placed in the body section of an
+      HTML page. The function is invoked (called) when a button is clicked:
+    </p>
+
+    <h2>Demo JavaScript in Body</h2>
+
+    <p id="demo7">A Paragraph</p>
+
+    <button type="button" onclick="ss()">Try it</button>
+
+    <script>
+      function ss() {
+        document.getElementById("demo7").innerHTML = "changed again.";
+      }
+    </script>
+
+    <br />
+    <br />
+    <br />
+
+    <br />
+    <br />
+    <br />
+
+    <br />
+    <br />
+
+    <p>Demo External JavaScript</p>
+
+    <p id="srs">SRS</p>
+
+    <button type="button" onclick="sss()">Try it</button>
+
+    <p>This example links to "srs.js".</p>
+    <p>(id=srs is stored in "srs.js")</p>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <p>
+      JavaScript can "display" data in different ways:
+      <br />
+      Writing into an HTML element, using innerHTML.
+      <br />
+      Writing into the HTML output using document.write().
+      <br />
+      Writing into an alert box, using window.alert().
+      <br />
+      Writing into the browser console, using console.log().
+    </p>
+
+    <p id="demo8">using innerHTML</p>
+
+    <script>
+      document.getElementById("demo8").innerHTML = 5 + 6;
+    </script>
+
+    <p>using document.write()</p>
+    <script>
+      document.write(6 + 10);
+    </script>
+
+    <p>using window.alert() <br />the window keyword is optional:</p>
+    <script>
+      window.alert(10 + 6);
+    </script>
+    <p>we can skip the window keyword</p>
+    <script>
+      alert(4 + 7);
+    </script>
+    <p>by using alert 2 times in script tag, we will get 2 alerts</p>
+
+    <p>using console.log()</p>
+    <script>
+      console.log(5 + 6);
+    </script>
+    <br />
+    <button onclick="window.print()">Print this page</button>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h2>JavaScript Statements</h2>
+
+    <p>
+      A <b>JavaScript program</b> is a list of <b>statements</b> to be executed
+      by a computer.
+    </p>
+
+    <p id="demo9"></p>
+
+    <script>
+      let x, y, z; // Statement 1
+      x = 5; // Statement 2
+      y = 6; // Statement 3
+      z = x + y; // Statement 4
+
+      document.getElementById("demo9").innerHTML =
+        "The value of z is " + z + ".";
+    </script>
+
+    <br /><br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h2>JavaScript Statements</h2>
+
+    <p>JavaScript code blocks are written between { and }</p>
+
+    <button type="button" onclick="intro()">Click Me!</button>
+
+    <p id="in"></p>
+    <p id="tro"></p>
+
+    <script>
+      function intro() {
+        document.getElementById("in").innerHTML = "Hello Dolly!";
+        document.getElementById("tro").innerHTML = "How are you?";
+      }
+    </script>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h1>JavaScript Variables</h1>
+
+    <p>In this example, price1, price2, and total are variables.</p>
+    <h1 id="price"></h1>
+    <script>
+      let p1, p2, total;
+      p1 = 50;
+      p2 = 50;
+      total = p1 + p2;
+      document.getElementById("price").innerHTML =
+        "total is " + total + " taka";
+    </script>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h1>JavaScript Arrays</h1>
+    <h2>The sort() Method</h2>
+
+    <p>Click the buttons to sort the array alphabetically or numerically.</p>
+
+    <button onclick="myFunction1()">Sort Alphabetically</button>
+    <br />
+    <button onclick="myFunction2()">Sort Numerically</button>
+
+    <p id="demo10"></p>
+  </body>
+</html>
