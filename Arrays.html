@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS Array Methods [Search, Sort, iteration & basic methods]</title>
+    <title>JS Array Manipulation</title>
     <link rel="stylesheet" href="/css/arrays.css" />
     <script src="/js/arrays.js" defer></script>
     <!--                        The reason your script might not run 
@@ -16,7 +16,10 @@
                                 because those elements don't exist in the DOM at that moment.-->
   </head>
   <body>
-    <div class="container">
+    <header>
+      <h1>JavaScript Array Manipulation</h1>
+    </header>
+    <main class="container">
       <h1 class="underline-heading">Arrays</h1>
       <p>
         An array is a special variable, which can hold more than one value.<br />
@@ -27,9 +30,19 @@
         the values by referring to an index number.
       </p>
       <p id="demo1" class="style"></p>
-
+      <br />
       <br />
       <hr />
+      <h3>
+        <em
+          >N.B: Check the JS code file(arrays.js) to understand more about all
+          of the black box outputs of this website and check html & css
+          file(Arrays.html & arrays.css) to understand more about the design of
+          this whole website.
+        </em>
+      </h3>
+      <hr />
+      <br />
       <br />
 
       <h2 class="underline-heading">Creating an Array</h2>
@@ -83,8 +96,11 @@
         and methods:
       </p>
       <h3>
-        cars.length // Returns the number of elements <br />
-        cars.sort() // Sorts the array
+        cars.length <br />
+        // Returns the number of elements <br />
+        <br />
+        cars.sort() <br />
+        // Sorts the array
       </h3>
 
       <br />
@@ -327,6 +343,10 @@
       <hr />
       <br />
 
+      <h3>
+        added a new element to an array is using the length in a function.<br />
+        names[names.length] = "Shamim Rahman Sam";
+      </h3>
       <button onclick="lengthFunction()">
         Add New Name by clicking it once
       </button>
@@ -340,7 +360,13 @@
       <p>
         WARNING ! <br />
         Adding elements with high indexes can create undefined "holes" in an
-        array:
+        array <br />
+        as we are getting as we are getting in index[4],[5],[6],[7],[8].<br />
+        Because we are adding an element in index[9]<br /><br />
+        N.B: The output of first index[0] is showing undefined. <br />Because we
+        deleted it already when we used array delete() method by using this
+        fruits array <br />
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
       </p>
       <p id="demo20" class="style"></p>
 
@@ -1001,10 +1027,16 @@
       <hr />
       <br />
       <br />
-      <footer>&copy; Shamim Rahman Sam SRS 2024</footer>
-      <script>
-        window.alert("JS ARRAY METHODS by SRS");
-      </script>
-    </div>
+    </main>
+
+    <footer>
+      All rights Reserved. <br />
+      Copyright &copy; 2024 <br />
+      Shamim Rahman Sam SRS <br />
+    </footer>
+
+    <script>
+      window.alert("JS ARRAY Manipulation by SHAMIM RAHMAN SAM (SRS)");
+    </script>
   </body>
 </html>
